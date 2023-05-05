@@ -41,7 +41,7 @@ To run this project, you need to have the following:
 
     - Make sure you have the PostgreSQL JDBC driver (JAR file) added to your project's classpath.
 
-5. Build and run the project:
+5. Build and run the project.
 
 6. Verify the results:
 
