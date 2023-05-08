@@ -1,9 +1,6 @@
 package org.pace;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 
 public class ACIDPostgreSQL {
@@ -106,6 +103,10 @@ public class ACIDPostgreSQL {
 
             String insertNewStock = "INSERT INTO Stock VALUES ('p100', 'd2', 50)";
             stmt.executeUpdate(insertNewStock);
+
+            // To show ACID works correctly
+            String insertNewStock1 = "INSERT INTO Stock VALUES ('p100', 'd2', 50)";
+            stmt.executeUpdate(insertNewStock1);
 
         } catch (SQLException e) {
             System.out.println("An exception was thrown " + e);
