@@ -63,7 +63,7 @@ The Java application performs the following transactions on the sample database:
 
 **Note:** 
 
-- The additional transactions are commented out to prevent accidental execution. Uncomment the desired transaction code before running the application.
+- To avoid the additional transactions comment out the transactions as needed before the code execution.
 
 
 - Deletes all existing data from the `Product` and `Depot` tables. This is for resetting data to add it again after executing 
