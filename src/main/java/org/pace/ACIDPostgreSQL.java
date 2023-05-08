@@ -97,7 +97,7 @@ public class ACIDPostgreSQL {
             stmt.executeUpdate(deleteProduct);
 
             // Transaction 3: The product p1 changes its name to pp1 in Product and Stock.
-            String updateProduct = "UPDATE Product SET prod_id='pp1' WHERE prod_id = 'p1'";
+            String updateProduct = "UPDATE Product SET prod_id = 'pp1' WHERE prod_id = 'p1'";
             stmt.executeUpdate(updateProduct);
 
             // Transaction 5: We add a product (p100, cd, 5) in Product and (p100, d2, 50) in Stock.
