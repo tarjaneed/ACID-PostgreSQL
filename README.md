@@ -60,11 +60,10 @@ The Java application performs the following transactions on the sample database:
     - Transaction 1: Deletes the product `p1` from the `Product` and `Stock` tables.
     - Transaction 3: Changes the name of product `p1` to `pp1` in the `Product` and `Stock` tables.
     - Transaction 5: Adds a new product (`p100`, `cd`, `5`) to the `Product` table and corresponding entry (`p100`, `d2`, `50`) in the `Stock` table.
-
+ 
 **Note:** 
 
-- The additional transactions are commented out to prevent accidental execution. Uncomment the desired transaction code before running the application.
-
+- To avoid the additional transactions comment out the transactions as needed before the code execution.
 
 - Deletes all existing data from the `Product` and `Depot` tables. This is for resetting data to add it again after executing 
 the delete transaction to avoid commenting/uncommenting of the insert statements for showcasing other transactions.
